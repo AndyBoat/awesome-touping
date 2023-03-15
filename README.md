@@ -1,4 +1,7 @@
 # Awesome Touping
+Pick your local video, served as http static resource with content-range supported, and open Safari automatically.
+And after that, you can choose the `airplay` button in video controls, to share video among all devices in your local network.
+
 ```
 > npm install
 > npx tsx index.ts serve {/path/to/local/video/file}
