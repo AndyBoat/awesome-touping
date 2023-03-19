@@ -5,14 +5,16 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx esbuild index.ts --bundle --platform=node --outdir=./bin"
+    "build": "npx esbuild index.ts --bundle --platform=node --outdir=./bin --banner:js='#!/usr/bin/env node'"
   },
   "keywords": [
     "video",
     "AirPlay",
     "http"
   ],
-  "bin": {},
+  "bin": {
+    "awesome-touping": "./bin/index.js"
+  },
   "author": "boatzhang <andyboat1009@gmail.com> (https://github.com/AndyBoat)",
   "license": "MIT",
   "devDependencies": {
