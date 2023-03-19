@@ -2,7 +2,8 @@ import createServer from "./create-server";
 import { exec } from "node:child_process";
 import os from "node:os";
 import yargs from "yargs";
-import { hideBin } from "yargs/helpers";
+
+const y = yargs();
 
 const startServe = async (filePath: string, port: number) => {
   const localIpInternal: string = (() => {
@@ -33,7 +34,7 @@ const startServe = async (filePath: string, port: number) => {
   // })();
 };
 
-const argv = yargs
+const argv = y
   .scriptName("awesome-touping")
   .command(
     "serve <path>",
@@ -59,8 +60,8 @@ const argv = yargs
       "Serve the example.mp4 from local port 3000",
     ],
   ])
-  .alias("help", "h").argv;
+  .alias("help", "h");
 
-const { path: filePath, port } = argv as any;
+const { path: filePath, port } = y.parse(process.argv.slice(2)) as any;
 // console.info({ filePath, port });
 startServe(filePath, port);

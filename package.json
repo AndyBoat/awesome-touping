@@ -1,16 +1,24 @@
 {
   "name": "awesome-touping",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Serve local video to support AirPlay across devices",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx esbuild index.ts --bundle --platform=node --outdir=./bin"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "video",
+    "AirPlay",
+    "http"
+  ],
+  "bin": {},
+  "author": "boatzhang <andyboat1009@gmail.com> (https://github.com/AndyBoat)",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.15.3",
     "@types/yargs": "^17.0.22",
+    "esbuild": "^0.17.12",
     "prettier": "^2.8.4",
     "tsc": "^2.0.4",
     "tsx": "^3.12.5",
