@@ -1,6 +1,15 @@
 {
   "name": "awesome-touping",
   "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/AndyBoat/awesome-touping",
+    "type": "github"
+  },
+  "exports": [
+    "./bin",
+    "./package.json",
+    "./README.md"
+  ],
   "description": "Serve local video to support AirPlay across devices",
   "main": "index.ts",
   "scripts": {
@@ -9,6 +18,7 @@
   },
   "keywords": [
     "video",
+    "cli",
     "AirPlay",
     "http"
   ],
@@ -28,5 +38,8 @@
   },
   "dependencies": {
     "yargs": "^17.7.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org "
   }
 }
