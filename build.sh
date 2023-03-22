@@ -2,6 +2,7 @@ cd ./web
 npm ci
 npm run build
 cd ..
+rm -rf ./bin
 npm ci
 npm run build
 mkdir ./bin/web

@@ -37,11 +37,11 @@ const startServe = async (filePath: string, port: number) => {
 const argv = y
   .scriptName("awesome-touping")
   .command(
-    "serve <path>",
-    "serve local video file with an accessible url in local area network on MacOS. Mp4 only now.",
+    ["serve <path>", "$0"],
+    "serve local video file with an accessible url in local area network on MacOS. **Mp4 only now.**",
     (yargs) => {
       yargs.positional("path", {
-        describe: "local video file path",
+        describe: "the path of local video file",
         type: "string",
       });
     }
@@ -54,6 +54,7 @@ const argv = y
   })
   .demandCommand(1, "You need at least one command before moving on")
   .example([
+    ["$0 example.mp4", "Serve the example.mp4"],
     ["$0 serve example.mp4", "Serve the example.mp4"],
     [
       "$0 serve example.mp4 -p 3000",
