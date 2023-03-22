@@ -46,7 +46,7 @@ Example
 ## Guidance
 
 ### You are not using Safari
-If you are using Chrome or other AirPlay-available browser, you will see this above the video:
+If you are using Chrome or other AirPlay-unavailable browser, you will see this above the video:
 
 ![Safari-Warning](./doc/safari-warning.png)
 
