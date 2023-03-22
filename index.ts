@@ -23,7 +23,7 @@ const startServe = async (filePath: string, port: number) => {
   // (async () => {
   const createRes = await createServer(filePath, port);
   if (createRes) {
-    const targetUrl = `http://${localIpInternal}:${port}/awesome.mp4`;
+    const targetUrl = `http://${localIpInternal}:${port}/awesome`;
     const command = `open -a /Applications/Safari.app ${targetUrl}`;
     console.info("local url: ", targetUrl);
     console.info(

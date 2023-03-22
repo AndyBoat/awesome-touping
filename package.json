@@ -1,6 +1,6 @@
 {
   "name": "awesome-touping",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "url": "https://github.com/AndyBoat/awesome-touping",
     "type": "github"
@@ -8,7 +8,8 @@
   "exports": [
     "./bin",
     "./package.json",
-    "./README.md"
+    "./README.md",
+    "./web/dist"
   ],
   "description": "Serve local video to support AirPlay across devices",
   "main": "index.ts",
