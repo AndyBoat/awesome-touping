@@ -70,6 +70,7 @@ Please check your device is working as expected, and is connected with a same ne
 - Support custom port and local ip address;
   - [x] custom port
 - Publish as homebrew package **[WIP]**
+  - [x] usable local rb file
 - Support interactive command-line;
 - Support proxy for multiple video, with custom order;
 - Wrap an application on MacOS;
