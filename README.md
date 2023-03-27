@@ -9,8 +9,15 @@ And after that, you can choose the `Airplay` button in video controls, to share 
 
 ## Usage
 
+npm 
 ```shell
- npm install -g awesome-touping
+> npm install -g awesome-touping
+```
+
+or homebrew
+```shell
+> wget https://raw.githubusercontent.com/AndyBoat/awesome-touping/main/awesome-touping.rb
+> brew install ./awesome-touping.rb
 ```
 
 ```shell
